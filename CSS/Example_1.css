@@ -1,0 +1,17 @@
+#Para-1 {
+    display: inline-block;
+    background-color: lightcoral;
+    border: 2px solid brown;
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+}
+
+#Para-2 {
+    display: inline-block;
+    border: 2px solid rgb(182, 162, 202);
+    background-color: lightsalmon;
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+}

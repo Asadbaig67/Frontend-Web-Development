@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    height: 100vh;
+    width: 200px;
+    color: white;
+    background-color: hsl(200, 70%, 30%);
+    font-size: 4rem;
+    transition: transform .5s cubic-bezier(0.66, 0, 0.69, 1.42);
+}
+
+.animation {
+    transform: translate(-200px, 0);
+}
+
+.toggle {
+    transform: translate(0, 0);
+}
+
+#btn {
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+/* .box:hover {
+    cursor: pointer;
+    transform: translate(-200px, 0);
+} */

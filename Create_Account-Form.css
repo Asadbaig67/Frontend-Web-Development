@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #9b59b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1px 0px;
+}
+
+.header h2 {
+    padding: 1px 17px;
+    margin-top: 17px;
+}
+
+.container {
+    width: 400px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.main-form {
+    padding: 5px 5px;
+    margin: 2px 2px;
+}
+
+.form-control {
+
+    position: relative;
+    padding: 20px 11px;
+    margin: 2px 2px;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="password"] {
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 11px;
+}
+
+.btn {
+    background-color: #8e44ad;
+    border: 1px solid #8e44ad;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    color: white;
+}
+
+.form-control i {
+    position: absolute;
+    top: 51px;
+    right: 20px;
+    visibility: hidden;
+}
+.form-control small{
+    visibility: hidden ;
+}
+.form-control.success input{
+    border: 2px solid #2ecc71;   
+}
+.form-control.error input{
+    border: 2px solid #e74c3c;   
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;   
+}
+.form-control.success i.fa-circle-check{
+    visibility: visible;
+    color: #2ecc71;   
+}
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;   
+}

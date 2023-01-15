@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrement Counter Using JavaScript</title>
+</head>
+<body>
+    <div>
+        <img  id="bg-img"  src="/peaky wallpaper.jpg" alt="">
+        <h1 id="val"> 10 </h1>
+    </div>
+    
+    <script>
+        let num=document.getElementById('val');
+        let value=num.innerHTML;
+        let bgimgele=document.getElementById('bg-img');
+        console.log(bgimgele);
+        setInterval(function(){
+            if(value!=0){
+                value--;
+                num.innerHTML=value;
+                if(value%2==0){
+                    let bgimg='/peaky wallpaper.jpg'
+                    bgimgele.src=bgimg;
+                }
+                else{
+                    bgimg='/hd.jpg'
+                    bgimgele.src=bgimg;
+                }
+                
+            }
+            else{
+                return;
+            }
+            
+        },1000)
+
+    </script>
+</body>
+</html>

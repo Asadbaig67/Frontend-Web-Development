@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 90%;
+    color: #666;
+    background-color: #f8f8f8;
+}
+
+#headings {
+
+    color: white;
+    background-color: #90b4d6;
+}
+
+td {
+    padding: 8px;
+    background-color: #e0e9f0;
+
+}
+
+th {
+    padding: 8px;
+}
+
+#table-id {
+    width: 780px;
+    border: 2px solid brown;
+}
+
+#para-1 {
+    padding: 6px;
+}
+
+#para-2 {
+    padding: 6px;
+}
+
+#field-id {
+    margin-top: 20px;
+    width: 350px;
+}
+
+#L-id {
+    font-weight: bold;
+    font-style: italic;
+}
+
+input[type="text"] {
+    width: 183px;
+    border: 1px solid #d6d6d6;
+    padding: 4px;
+    margin-bottom: 8px;
+    outline: none;
+    box-shadow: 1px 2px 6px burlywood;
+}
+
+.loaction {
+    padding: 4px;
+    margin-bottom: 8px;
+}

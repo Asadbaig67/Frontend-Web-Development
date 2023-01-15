@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updating Styles</title>
+    <style>
+        #count {
+            font-size: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="bg-img" src="/hd.jpg" alt="">
+        <h1 id="count">10</h1>
+    </div>
+    <script>
+        let countele = document.getElementById('count');
+        let initialcount = countele.innerHTML;
+
+        setInterval(() => {
+
+            if (initialcount == 0) {
+                return;
+            }
+            countele.innerHTML = initialcount = initialcount - 1;
+            countele.style.fontSize = 400+"px";
+
+        }, 1000);
+    </script>
+</body>
+
+</html>

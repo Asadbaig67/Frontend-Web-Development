@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        * {
+            background-color: beige;
+        }
+
+        #btn {
+
+            border-radius: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+        }
+
+        #divid {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divid">
+        <button id="btn"> Click Me </button>
+    </div>
+    <script>
+        let btnElement = document.getElementById('btn');
+        function onclickfun() {
+            btnElement.style.backgroundColor = "rgb(" + Math.floor(Math.random*222) + " ," + Math.floor(Math.random*222)  + "," + Math.floor(Math.random*222)  + ")"
+            // btnElement.style.backgroundColor='rgb(80,45,44)';
+        }
+        btnElement.addEventListener('click', onclickfun);
+
+    </script>
+</body>
+
+</html>

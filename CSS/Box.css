@@ -1,0 +1,59 @@
+body {
+    font-size: 80%;
+    font-family: "Courier New", Courier, monospace;
+    /* letter-spacing: 0.15em; */
+    background-color: #efefef;
+}
+
+#page {
+    padding-bottom: 200px;
+    border: 4px double #000;
+    background-color: #ffffff;
+}
+
+p.one {
+    margin-top: 65px;
+    line-height: 0em;
+    text-align: center;
+}
+
+p.two {
+    line-height: 0em;
+    text-align: center;
+}
+
+p.three {
+    line-height: 0em;
+    text-align: center;
+}
+
+p.four {
+    margin-top: 26px;
+    margin-left: 360px;
+}
+
+p.five {
+    text-align: center;
+}
+
+.img-box {
+    margin: -4px;
+    height: 200px;
+    width: 269px;
+}
+
+ul {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 40px;
+    margin-left: 358px;
+    margin-right: 358px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+ul>li {
+    padding: 48px;
+    display: inline;
+    list-style: none;
+}

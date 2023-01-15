@@ -1,0 +1,16 @@
+.error{
+    border: 2px solid red;
+}
+.err-msg{
+    display: none;
+}
+.green{
+    border: 3px solid green;
+}
+.red{
+    border:3px solid red;
+}
+#btn{
+    padding: 10px 10px 10px 10px;
+    color: blue;
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        #table {
+            position: absolute;
+            top: 49%;
+            left: 44%;
+            background-color: black;
+            color: white;
+
+        }
+
+        img {
+            height: 100vh;
+            width: 100%;
+        }
+
+        #input-box {
+            border: 1px solid rgb(0, 0, 0);
+            border-top: 12px solid black;
+            border-bottom: 1px solid black;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-color: white;
+            position: absolute;
+            margin-top: 4px;
+            margin-left: 1px;
+            /* padding-left: 0px;
+            padding-right: 57px;
+            padding-bottom: 40px; */
+            top: 39%;
+            left: 44%;
+            width: 16%;
+            height: 60px;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        #btn-1 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-1:hover {
+            cursor: pointer;
+        }
+
+        #btn-2 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-2:hover {
+            cursor: pointer;
+        }
+
+        #btn-3 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-3:hover {
+            cursor: pointer;
+        }
+
+        #btn-4 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-4:hover {
+            cursor: pointer;
+        }
+
+        #btn-5 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-5:hover {
+            cursor: pointer;
+        }
+
+        #btn-6 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-6:hover {
+            cursor: pointer;
+        }
+
+        #btn-7 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-7:hover {
+            cursor: pointer;
+        }
+
+        #btn-8 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-8:hover {
+            cursor: pointer;
+        }
+
+        #btn-9 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-9:hover {
+            cursor: pointer;
+        }
+
+        #btn-0 {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-0:hover {
+            cursor: pointer;
+        }
+
+        #btn-add {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-add:hover {
+            cursor: pointer;
+        }
+
+        #btn-sub {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-sub:hover {
+            cursor: pointer;
+        }
+
+        #btn-div {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-div:hover {
+            cursor: pointer;
+        }
+
+        #btn-mul {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-mul:hover {
+            cursor: pointer;
+        }
+
+        #btn-clear {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-clear:hover {
+            cursor: pointer;
+        }
+
+        #btn-submit {
+            padding: 23px;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        #btn-submit:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/images/background-img.jpg" alt="">
+        <div id="input-box">0</div>
+        <div id="table">
+            <div>
+                <button id="btn-7">7</button>
+                <button id="btn-9">8</button>
+                <button id="btn-8">9</button>
+                <button id="btn-add">+</button>
+            </div>
+            <div>
+                <button id="btn-4">4</button>
+                <button id="btn-5">5</button>
+                <button id="btn-6">6</button>
+                <button id="btn-sub">-</button>
+            </div>
+            <div>
+                <button id="btn-1">1</button>
+                <button id="btn-2">2</button>
+                <button id="btn-3">3</button>
+                <button id="btn-mul">*</button>
+            </div>
+            <div>
+                <button id="btn-clear">C</button>
+                <button id="btn-0">0</button>
+                <button id="btn-submit">=</button>
+                <button id="btn-div">/</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn0 = document.getElementById('btn-0');
+        let btn1 = document.getElementById('btn-1');
+        let btn2 = document.getElementById('btn-2');
+        let btn3 = document.getElementById('btn-3');
+        let btn4 = document.getElementById('btn-4');
+        let btn5 = document.getElementById('btn-5');
+        let btn6 = document.getElementById('btn-6');
+        let btn7 = document.getElementById('btn-7');
+        let btn8 = document.getElementById('btn-8');
+        let btn9 = document.getElementById('btn-9');
+        let btn_add = document.getElementById('btn-add');
+        let btn_sub = document.getElementById('btn-sub');
+        let btn_mul = document.getElementById('btn-mul');
+        let btn_div = document.getElementById('btn-div');
+        let btn_clear = document.getElementById('btn-clear');
+        let btn_submit = document.getElementById('btn-submit');
+        let input_field = document.getElementById('input-box');
+        // input_field.addEventListener('input', function (e) {
+
+        // });
+        btn0.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "0"
+            }
+            else{
+                input_field.innerHTML += "0";
+            }
+            
+        });
+        btn1.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "1"
+            }
+            else{
+                input_field.innerHTML += "1";
+            }
+            
+        });
+        btn2.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "2"
+            }
+            else{
+                input_field.innerHTML += "2";
+            }
+            
+        });
+        btn3.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "3"
+            }
+            else{
+                input_field.innerHTML += "3";
+            }
+            
+        });
+        btn4.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "4"
+            }
+            else{
+                input_field.innerHTML += "4";
+            }
+            
+        });
+        btn5.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "5"
+            }
+            else{
+                input_field.innerHTML += "5";
+            }
+            
+        });
+        btn6.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "6"
+            }
+            else{
+                input_field.innerHTML += "6";
+            }
+            
+        });
+        btn7.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "7"
+            }
+            else{
+                input_field.innerHTML += "7";
+            }
+        
+        });
+        btn8.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "8"
+            }
+            else{
+                input_field.innerHTML += "8";
+            }
+        });
+        btn9.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "9"
+            }
+            else{
+                input_field.innerHTML += "9";
+            }
+        });
+        btn_add.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "+"
+            }
+            else{
+                input_field.innerHTML += "+";
+            }
+        });
+        btn_sub.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "-"
+            }
+            else{
+                input_field.innerHTML += "-";
+            }
+        });
+        btn_mul.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "*"
+            }
+            else{
+                input_field.innerHTML += "*";
+            }
+        });
+        btn_div.addEventListener('click', function () {
+            if(input_field.innerHTML=='0'){
+                input_field.innerHTML = "/"
+            }
+            else{
+                input_field.innerHTML += "/";
+            }
+        });
+        btn_clear.addEventListener('click', function () {
+            input_field.innerHTML = " ";
+        });
+        btn_submit.addEventListener('click', function () {
+            let prev_value ="";
+            let current_value="";
+            let values = input_field.innerHTML;
+            let final_answer=eval(values);
+            input_field.innerHTML=final_answer;
+            
+        });
+
+    </script>
+</body>
+
+</html>

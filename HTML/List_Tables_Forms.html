@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/List&Forms.css">
+    <title>Lists Tables and Forms</title>
+
+</head>
+<body>
+    <h1>Poetry Workshops</h1>
+    <p>We will be conducting a number of poetry workshops
+        and symposiums throughout the year.</p>
+    <p>Please note that the following events are free to
+        members:</p>
+    <ul>
+        <li>A Poetic Perspective</li>
+        <li>Walt Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+    </ul>
+    <table id="table-id">
+        <tr id="headings">
+            <th></th>
+            <th>New York</th>
+            <th>Chicago</th>
+            <th>San Francisco</th>
+        </tr>
+        <tr>
+            <td>A Poetic Perspective</td>
+            <td>Sat, 4 Feb 2012 <br> 11am - 2pm</td>
+            <td>Sat, 3 Mar 2012 <br>11am - 2pm</td>
+            <td>Sat, 17 Mar 2012 <br>11am - 2pm</td>
+        </tr>
+        <tr>
+            <td>Walt Whitman at War</td>
+            <td>Sat, 4 Feb 2012 <br>11am - 2pm</td>
+            <td>Sat, 3 Mar 2012 <br>11am - 2pm</td>
+            <td>Sat, 17 Mar 2012 <br>11am - 2pm</td>
+        </tr>
+        <tr>
+            <td>Found Poems and Outsider Poetry</td>
+            <td>Sat, 4 Feb 2012 <br>11am - 2pm</td>
+            <td>Sat, 3 Mar 2012 <br>11am - 2pm</td>
+            <td>Sat, 17 Mar 2012 <br>11am - 2pm</td>
+        </tr>
+        <tr>
+            <td>Natural Death: An Exploration</td>
+            <td>Sat, 4 Feb 2012 <br>11am - 2pm</td>
+            <td>Sat, 3 Mar 2012 <br>11am - 2pm</td>
+            <td>Sat, 17 Mar 2012 <br>11am - 2pm</td>
+        </tr>
+    </table>
+    <form method="get" id="form-id">
+        <fieldset id="field-id">
+            <legend id="L-id">Register Your Interest</legend>
+            <p id="para-1">
+                Your Name: <input type="text"><br>
+                Your Email: <input type="text"><br>
+            </p>
+            <p id="para-2">
+                Your Closest Center: <select  name="location" class="location">
+                    <option value="">New York</option>
+                    <option value="">Chicago</option>
+                    <option value="">San Francisco</option>
+                </select><br>
+                Are You A Member:<input class="location" type="radio" name="member" value="yes" />Yes
+                <input class="location" type="radio" name="member" value="no" />No
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

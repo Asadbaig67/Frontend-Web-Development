@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #nav-id {
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        #head-id {
+            background-color: #232f3f;
+        }
+
+        #logo {
+            width: 200px;
+            height: 80px;
+        }
+
+        #sec-id {
+            text-align: center;
+        }
+
+        #watch-img {
+            height: 350px;
+            width: 350px;
+        }
+
+        #btn1 {
+            border: solid 2px rgb(204, 219, 211);
+            border-radius: 8px;
+            margin: 2px;
+            padding: 4px;
+            background-color: rgb(204, 219, 211);
+            color: black;
+        }
+
+        #btn1:hover {
+            cursor: pointer;
+        }
+
+        #btn2 {
+            border: solid 2px rgb(204, 219, 211);
+            border-radius: 8px;
+            margin: 2px;
+            padding: 4px;
+            background-color: rgb(204, 219, 211);
+            color: black;
+        }
+
+        #btn2:hover {
+            cursor: pointer;
+        }
+
+
+        #main-btn {
+            border: 2px solid rgb(209, 120, 88);
+            border-radius: 8px;
+            color: black;
+            background-color: rgb(209, 120, 88);
+            margin: 2px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 6px;
+
+        }
+
+        #main-btn {
+            cursor: pointer;
+        }
+
+        #C1 {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-left: 0px;
+            margin-right: 16px;
+            border-radius: 5px;
+            background-color: rgb(61, 41, 41);
+        }
+
+        #C1:hover {
+
+            cursor: pointer;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-left: 0px;
+            margin-right: 17px;
+            border-radius: 5px;
+        }
+
+        #C2 {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-left: 0px;
+            margin-right: 16px;
+            border-radius: 5px;
+            background-color: pink;
+        }
+
+        #C2:hover {
+
+            cursor: pointer;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-left: 0px;
+            margin-right: 17px;
+            border-radius: 5px;
+        }
+
+
+        #C3 {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-left: 0px;
+            margin-right: 16px;
+            border-radius: 5px;
+            background-color: rgb(51, 51, 134);
+        }
+
+        #C3:hover {
+
+            cursor: pointer;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-left: 0px;
+            margin-right: 17px;
+            border-radius: 5px;
+        }
+
+        #C4 {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-left: 0px;
+            margin-right: 16px;
+            border-radius: 5px;
+            background-color: purple;
+        }
+
+        #C4:hover {
+
+            cursor: pointer;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-left: 0px;
+            margin-right: 17px;
+            border-radius: 5px;
+        }
+        #p-id{
+            color: white;
+            position:absolute;
+            margin-top: 185px;
+            margin-left: 725px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="head-id">
+        <nav id="nav-id">
+            <img id="logo" src="/amazon-logo.png" alt="">
+        </nav>
+    </header>
+
+    <section id="sec-id">
+        <p id="p-id"></p>
+        <img id="watch-img" src="/images/black-img.png" alt="">
+        <div>
+            <h1>FitBit 19-The Smart Watch</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, a modi nostrum quod earum debitis
+                Vitae quae commodi placeat quisquam?</p>
+            <br>
+        </div>
+        <div>
+            <h4>Select Color</h4>
+            <br>
+            <span id="C1"> </span>
+            <span id="C2"> </span>
+            <span id="C3"> </span>
+            <span id="C4"> </span>
+        </div>
+        <div>
+            <br>
+            <h4>Features</h4>
+            <br>
+            <button id="btn1">Time</button>
+            <button id="btn2">Heart Rate</button>
+            <br> <br>
+            <button id="main-btn">Buy Now</button>
+        </div>
+    </section>
+    
+    <script>
+        let Watch_Element = document.getElementById('watch-img');
+        let Color_1 = document.getElementById('C1');
+        let Color_2 = document.getElementById('C2');
+        let Color_3 = document.getElementById('C3');
+        let Color_4 = document.getElementById('C4');
+        let Time_btn = document.getElementById('btn1');
+        let Para_id = document.getElementById('p-id');
+
+        Color_1.addEventListener('click', function () {
+            Watch_Element.src = '/images/black-img.png';
+        });
+        Color_2.addEventListener('click', function () {
+            Watch_Element.src = '/images/pink-img.png';
+        });
+        Color_3.addEventListener('click', function () {
+            Watch_Element.src = '/images/purple-img.png';
+        });
+        Color_4.addEventListener('click', function () {
+            Watch_Element.src = '/images/purple-img(1).png';
+        });
+        function currentTime() {
+            let date = new Date();
+            let hh = date.getHours();
+            let mm = date.getMinutes();
+            let ss = date.getSeconds();
+            let session = "AM";
+            
+            if (hh > 12) {
+                session = "PM";
+            }
+
+            hh = (hh < 10) ? "0" + hh : hh;
+            mm = (mm < 10) ? "0" + mm : mm;
+            ss = (ss < 10) ? "0" + ss : ss;
+
+            let time = hh + ":" + mm + ":" + ss + " " + session;
+
+            Para_id.innerText=time;
+            var t = setTimeout(function () { currentTime() }, 1000);
+
+        }
+        Time_btn.addEventListener('click', currentTime);
+
+    </script>
+</body>
+
+</html>

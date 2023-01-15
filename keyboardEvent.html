@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard Events</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: right;
+
+
+        }
+
+        .sub {
+            border: 2px solid black;
+            border-radius: 8px;
+            margin: 4px;
+            padding: 72px;
+            margin-top: 257px;
+
+        }
+
+        span {
+            font-size: larger;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="sub">
+            <span id="sp1">A</span>
+            <audio id="audio-1" src="/Drumset Audio Files/boom.wav"></audio>
+        </div>
+        <div class="sub">
+            <span>S</span>
+            <audio id="audio-2" src="/Drumset Audio Files/clap.wav"></audio>
+        </div>
+        <div class="sub">
+            <span>D</span>
+            <audio id="audio-3" src="/Drumset Audio Files/hihat.wav"></audio>
+        </div>
+        <div class="sub">
+            <span>F</span>
+            <audio id="audio-4" src="/Drumset Audio Files/kick.wav"></audio>
+        </div>
+        <div class="sub">
+            <span>G</span>
+            <audio id="audio-5" src="/Drumset Audio Files/openhat.wav"></audio>
+        </div>
+        <div class="sub">
+            <span>H</span>
+            <audio id="audio-6" src="/Drumset Audio Files/ride.wav"></audio>
+        </div>
+        <div class="sub">
+            <span>J</span>
+            <audio id="audio-7" src="/Drumset Audio Files/snare.wav"></audio>
+        </div>
+        <div class="sub">
+            <span>K</span>
+            <audio id="audio-8" src="/Drumset Audio Files/tink.wav"></audio>
+        </div>
+        <div class="sub">
+            <span>L</span>
+            <audio id="audio-1" src="/Drumset Audio Files/tom.wav"></audio>
+        </div>
+    </div>
+    <script>
+        document.body.addEventListener('keyup',function(e){
+            let span1=document.getElementsByClassName('sub');
+            let keycode=e.keyCode;
+            if(keycode==65){
+                document.getElementById('audio-1').play();
+            
+            }
+            else if(keycode==83){
+                document.getElementById('audio-2').play();
+            }
+            else if(keycode==68){
+                document.getElementById('audio-3').play();
+            }
+            else if(keycode==70){
+                document.getElementById('audio-4').play();
+            }
+            else if(keycode==71){
+                document.getElementById('audio-5').play();
+            }
+            else if(keycode==72){
+                document.getElementById('audio-6').play();
+            }
+            else if(keycode==74){
+                document.getElementById('audio-7').play();
+            }
+            else if(keycode==75){
+                document.getElementById('audio-8').play();
+            }
+            else if(keycode==76){
+                document.getElementById('audio-9').play();
+            }
+        });
+    </script>
+</body>
+
+</html>
